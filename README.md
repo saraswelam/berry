@@ -16,6 +16,8 @@ A responsive React + Vite portfolio with public galleries and a private Supabase
 
 In Vercel, open the project’s **Settings → Environment Variables** and add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` for Production (and Preview if desired). Use the same Supabase URL and publishable/anon key as `.env.local`. These are embedded in the Vite bundle at build time, so trigger a new deployment after adding or changing them. Never add a Supabase service-role key. The deployed admin login is `https://your-domain/admin/login`.
 
+The root `vercel.json` rewrites deep links to `index.html`, so React Router routes such as `/admin/login` work when opened directly.
+
 ## Admin and content
 
 Open `/admin/login` and sign in with the provisioned email and password. The dashboard manages uploads, captions, descriptions, publication, ordering, categories, homepage display, biography, and contact details. New photos are unpublished until explicitly published. The homepage starts with no hero image. No visitor account or registration flow exists.
