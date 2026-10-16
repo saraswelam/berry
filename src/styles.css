@@ -16,3 +16,4 @@
 
 
 
+.preview{width:175px}.preview img{width:175px;height:110px;object-fit:cover}.preview-title{display:block;width:100%;margin-top:6px;padding:7px 8px;border:1px solid #d9d3e4;border-radius:5px;background:#fff;font-size:11px;outline:none}.preview-title:focus{border-color:#9a83bd;box-shadow:0 0 0 2px #9a83bd26}.preview button{z-index:1}
